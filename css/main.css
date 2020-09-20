@@ -1,7 +1,6 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   background-color: #232d3b;
   font-family: Esphimere;
@@ -100,6 +99,7 @@ a{
   padding-top: 0em;
   text-shadow: #000000 0px 3px 6px;
   padding-bottom: 15.0%;
+  line-height: normal;
 }
 
 .gameTray{
@@ -161,8 +161,9 @@ h1{
 .tournamentsStatus{
   /* display: inline; */
   font-size: 1.4em;
-  /* margin-top: 2em;
-  margin-left: 38em; */
+  margin-bottom: 0px;
+  /* margin-top: .7em; */
+  /* margin-left: 38em; */
 }
 
 .spacer {
@@ -380,10 +381,10 @@ h2{
   padding-left: 0.8125em;
 }
 
-.gitHeader div{
+/* .gitHeader div{
   font-size: 1.125em;
   padding-top: 1.125em;
-}
+} */
 
 .gitHeader div:last-child{
   padding-top: 0em;
@@ -479,4 +480,98 @@ h2{
 
 .blogStatus a:hover{
   color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar{
+    height: 2.75em;
+    border-width: 0.1em;
+  }
+  .navLinks {
+    display: none;
+  }
+
+  .helixiosLogo{
+    width: 65%;
+  }
+
+  .welcomeText{
+    font-size: 150%;
+    padding-bottom: 15%;
+  }
+
+  .caro-img{
+    width: 200% !important;
+    margin-left: -50%;
+  }
+
+  .gameHeader{
+    font-size: 80%;
+    margin-top: 1.5em;
+  }
+
+  .gameTray{
+    margin: 0em 0em 2.5em;
+    padding: 0em 7em 0em 7em;
+  }
+
+  .gameLogo img{
+    width: 50%;
+  }
+
+  .gameLogo{
+      border: 0em;
+  }
+
+  .tournamentsHeader, .blogHeader{
+      padding-bottom: 0.6em;
+      margin-bottom: 2.25em;
+  }
+
+  .tournamentsHeader h1, .blogHeader h1, .squadHeader h1{
+    font-size: 1.75em;
+  }
+
+  #tournamentsSection, #blogSection{
+    padding: 2em 3em 4.5em;
+    text-align: center;
+  }
+
+  #squadSection{
+    padding: 2.5em 3em 2.5em;
+    border-width: 0.1em;
+  }
+
+  .tournamentsStatus, .blogStatus{
+    display: none;
+  }
+
+  #tournamentsSection .spacer, #blogSection .spacer{
+    display: none;
+  }
+
+  .blogLines{
+    margin: 1em auto;
+  }
+
+  .blogBanners figcaption{
+    font-size: 0.85em;
+  }
+
+  .getInTouch{
+    padding-top: 0em;
+  }
+
+  .gitText{
+    padding-top: 0em;
+    font-size: 1em;
+  }
+
+  #gitButton{
+    display: block;
+  }
+
+  .squadHeader{
+    padding-bottom: 0.5em;
+  }
 }
